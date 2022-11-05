@@ -1,0 +1,21 @@
+# nuget
+packages/*
+
+# build folders
+bin/
+obj/
+
+# build results
+publish/
+
+# user-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# ncrunch
+*.ncrunchsolution
+*.ncrunchproject
+
+# other
+StyleCop.Cache
