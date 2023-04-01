@@ -11,7 +11,7 @@
     using System.Runtime.InteropServices;
     using System.Text;
     using System.Windows.Forms;
-
+    using Cyotek.Windows.Forms;
     /// <summary>
     /// Dialog Editor Form
     /// </summary>
@@ -152,7 +152,7 @@
 
             this.selectionType = SelectionType.None;
 
-            this.imageBox1.MinimumSelectionSize = new Size(1, 1);
+        //    this.imageBox1.MinimumSelectionSize = new Size(1, 1);
         }
 
         private ushort RGB16(int r, int g, int b)
@@ -1122,17 +1122,17 @@
             if (e.Button == MouseButtons.Left)
             {
                 Point imagePoint = this.imageBox1.PointToImage(e.Location);
-                if (this.imageBox1.HitTest(e.Location) != Cyotek.Windows.Forms.DragHandleAnchor.None)
+               /* if (this.imageBox1.HitTest(e.Location) != Cyotek.Windows.Forms.DragHandleAnchor.None)
                 {
                     return;
-                }
+                }*/
 
                 TreeNode selectedNode = this.SelectNodeWithMouse(this.treeView1.Nodes, null, imagePoint, e.Location);
                 if (selectedNode != null)
                 {
                     this.imageBox1.SelectionRegion = (Rectangle)selectedNode.Tag;
-                    this.imageBox1.DragOrigin = e.Location;
-                    this.imageBox1.DragOriginOffset = new Point(imagePoint.X - (int)this.imageBox1.SelectionRegion.X, imagePoint.Y - (int)this.imageBox1.SelectionRegion.Y);
+                    //this.imageBox1.DragOrigin = e.Location;
+                   // this.imageBox1.DragOriginOffset = new Point(imagePoint.X - (int)this.imageBox1.SelectionRegion.X, imagePoint.Y - (int)this.imageBox1.SelectionRegion.Y);
                     this.treeView1.SelectedNode = selectedNode;
                 }
             }

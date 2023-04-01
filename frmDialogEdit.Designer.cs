@@ -1,5 +1,6 @@
 ﻿namespace DialogEditor
 {
+    using Cyotek;
     partial class FrmDialogEdit
     {
         /// <summary>
@@ -31,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDialogEdit));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.imageBox1 = new Cyotek.Windows.Forms.ImageBoxEx();
+            this.imageBox1 = new Cyotek.Windows.Forms.ImageBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.cursorToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -95,16 +96,16 @@
             this.imageBox1.AlwaysShowVScroll = true;
             this.imageBox1.AutoCenter = false;
             this.imageBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imageBox1.DragOrigin = new System.Drawing.Point(0, 0);
-            this.imageBox1.DragOriginOffset = new System.Drawing.Point(0, 0);
+            //this.imageBox1.DragOrigin = new System.Drawing.Point(0, 0);
+           //this.imageBox1.DragOriginOffset = new System.Drawing.Point(0, 0);
             this.imageBox1.Location = new System.Drawing.Point(0, 0);
             this.imageBox1.Name = "imageBox1";
             this.imageBox1.Size = new System.Drawing.Size(775, 444);
             this.imageBox1.TabIndex = 11;
-            this.imageBox1.SelectionMoved += new System.EventHandler(this.ImageBox1_SelectionMoved);
-            this.imageBox1.SelectionMoving += new System.ComponentModel.CancelEventHandler(this.ImageBox1_SelectionMoving);
-            this.imageBox1.SelectionResized += new System.EventHandler(this.ImageBox1_SelectionResized);
-            this.imageBox1.SelectionResizing += new System.ComponentModel.CancelEventHandler(this.ImageBox1_SelectionResizing);
+           //this.imageBox1.SelectionMoved += new System.EventHandler(this.ImageBox1_SelectionMoved);
+            //this.imageBox1.SelectionMoving += new System.ComponentModel.CancelEventHandler(this.ImageBox1_SelectionMoving);
+           // this.imageBox1.SelectionResized += new System.EventHandler(this.ImageBox1_SelectionResized);
+            //this.imageBox1.SelectionResizing += new System.ComponentModel.CancelEventHandler(this.ImageBox1_SelectionResizing);
             this.imageBox1.Selected += new System.EventHandler<System.EventArgs>(this.ImageBox1_Selected);
             this.imageBox1.SelectionRegionChanged += new System.EventHandler(this.ImageBox1_SelectionRegionChanged);
             this.imageBox1.Zoomed += new System.EventHandler<Cyotek.Windows.Forms.ImageBoxZoomEventArgs>(this.ImageBox1_Zoomed);
@@ -454,7 +455,7 @@
         private System.Windows.Forms.ToolStripMenuItem buttonExtraDownToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dialogImageImportToolStripMenuItem;
-        private Cyotek.Windows.Forms.ImageBoxEx imageBox1;
+        private Cyotek.Windows.Forms.ImageBox imageBox1;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel cursorToolStripStatusLabel;
         private System.Windows.Forms.ToolStripStatusLabel statusToolStripStatusLabel;
